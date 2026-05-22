@@ -2,7 +2,7 @@ NAME=rift
 CFLAGS=-std=c99 -O3 -g -shared -fPIC
 INSTALL_DIR=$(HOME)/.local/share/rift.lua
 
-LUA_DIR=lua-5.4.7
+LUA_DIR=lua-5.5.0
 LIBS=-I$(LUA_DIR)/src -Lbin -llua -framework CoreFoundation
 
 ifeq ($(shell uname -sm),Darwin arm64)
